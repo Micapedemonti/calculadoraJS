@@ -1,0 +1,329 @@
+*{margin:0;
+	padding:0;
+	box-sizing: border-box;
+   }
+   body {
+	   
+  /* background-image: linear-gradient(-45deg, #080c0bf8, #12191afb);  */
+	  background-size: 100%;
+	  animation: gradient 5s ease infinite;
+	  background-repeat: no-repeat;
+	  display: grid;
+	  grid-template-columns: 1fr;
+	  background-image: url(../images/Wave-10s-1707px.png);
+  }
+
+ .rango input{ 
+	 color: #0c0b0b;
+	 background-color: #16a465;
+ }
+
+  .cuerpo{
+	display: grid;
+    grid-template-columns:40% 50%;
+    grid-template-rows:auto;
+    gap: 1%;
+	justify-items: center;
+  }
+  .coloCab{
+	background-image:  linear-gradient(-25deg,#5ae7d1,white);	  height: 5%;
+	  border-radius: 18px;
+
+  }
+  .body-main{
+	  display: flex;
+	  flex-wrap: wrap;
+	  align-content: space-around;
+	  margin: 5%;
+	  flex-direction: row-reverse;
+  }
+  .sobreCal{
+	  display: flex;
+	  flex-direction: column;
+	  align-content: center;
+  }
+.tituloCal{
+margin: 5%;
+}
+.ml6 {
+	position: relative;
+	font-size: 2.2em;
+	font-family:'Bungee Inline';
+  }
+  
+  .ml6 .text-wrapper {
+	position: relative;
+	display: inline-block;
+	padding-top: 0.2em;
+	padding-right: 0.05em;
+	padding-bottom: 0.1em;
+	overflow: hidden;
+  }
+  
+  .ml6 .letter {
+	display: inline-block;
+	line-height: 1em;
+  }
+.textoCal{
+	margin: 5%;
+	background-color: rgba(76, 175, 80, 0.3);
+	border-radius: 50px;
+	opacity: 40%;
+}
+.textoCal p{
+	color: black;
+	font-size:1.3rem;
+	font-family: 'Quicksand', sans-serif;
+	padding: 5%;
+	font-style: oblique;
+	font-weight: bold;
+}
+.animate_animated.animate_backInLeft {
+	animation-duration: 1.5s
+  }
+.animate_animated.animate_backInRight{
+	animation-duration: 1.5s
+}
+.seccionRegalo h1{
+	font-family:'Quicksand', sans-serif; 
+	font-size: 1rem;
+}
+#obsequioBoton{
+	color: white;
+	background: #5ae7d1;
+	border: 1px solid transparent;
+	font-size: 17px;
+	border-radius: 25px;
+	padding: 14px 29px;
+	margin: 25px;
+	transition: all .3s ease;
+	width: 50%;
+}
+
+  #container{
+	background-color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 10px 5px 10px black;
+    margin: 5%;
+    height: fit-content;
+    border: #6dead6 5px;
+	  margin: 5%;
+	  height: fit-content;
+	  border: black solid 1px ;
+  }
+   p{
+	  color:black;
+	  font-family:'Quicksand', sans-serif; 
+	  font-size: 1rem;
+	  font-weight: bold;
+   }
+   .control{
+	padding: 25px 0;
+	background-image: linear-gradient(-25deg,white);
+	border-radius: 50px 50px 0px 0px;
+  }
+  #mensAbono{
+	  font-family: 'Quicksand', sans-serif; 
+	  font-size: 0.8rem;
+  }
+  input{
+	  font-size: 28px;
+	  margin-top: 20px;
+	  border-radius: 25px;
+  }
+  .facturaTotal{
+	background-image:  linear-gradient(-25deg,#5ae7d1,white);
+	  border-radius: 0px 0px 50px 50px;
+	  padding: 25px 0 35px;
+  }
+  #propIng{
+	  border: none;
+	  outline: none;
+	  border: 1px solid #16a465;
+	  color: #0c0b0b;
+	  font-size: 18px;
+	  margin-top: 20px;
+	  padding: 11px 34px;
+	  border-radius: 25px;
+	  width: 75%;
+  }
+  
+  #btn{
+	  color: white;
+	  background: #5ae7d1;
+	  border: 1px solid transparent;
+	  font-size: 17px;
+	  border-radius: 25px;
+	  padding: 14px 29px;
+	  margin: 25px;
+	  transition: all .3s ease;
+	  width: 50%;
+  }
+  #btn:hover{
+	  background-color: #16a465;
+  }
+  #botton{
+	  color: white;
+	  background: #5ae7d1;
+	  border: 1px solid transparent;
+	  font-size: 17px;
+	  border-radius: 25px;
+	  padding: 14px 29px;
+	  margin: 25px;
+	  transition: all .3s ease;
+	  width: 50%;
+  }
+  #botton:hover{
+	background-color: #16a465;
+  }
+  
+  .ok{
+	  border: green 2px solid;;
+  }
+  .noOk{
+	  border: red 2px solid;;
+  }
+  input:focus{
+	outline:none;
+  }
+  #total{
+	  width: 100px;
+	  text-align: center;
+	  color: black;
+  }
+  .cuerpobtn{
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  flex-direction: column;
+  }
+  .rango{
+	  display: flex;
+	  align-items: flex-end;
+  }
+  .numpers{
+	  margin: 3%;
+  }
+  #divProp{
+	  margin: 2%;
+  }
+  #check{
+	display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+  
+  #USD{
+	  align-items: center;
+      display: flex;
+	  align-items: flex-end;
+	  padding:10%;
+  }
+  #ARG{
+	  display: flex;
+	  align-items: center;
+	  padding:10%;
+	  align-items: flex-end;
+  }
+  .mensajeDolar{
+	  flex-direction: column;
+  }
+  #popup-mensaje{
+	display: none;
+	background-color: #5ae7d1;
+	font-size: 5em;
+}  
+#popup-mensaje.popup-active{
+	display: block;
+	font-size: 0.8em;
+} 
+
+.modal-container-regaloCliente{
+	align-items: center;
+	background-color: rgba(0,.0, .0,.5);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100vw;
+	visibility: hidden;
+}
+.containerRegalo{
+	display: flex;
+	width: 100%;
+}
+#regalo{
+	display: flex;
+	width: 100%;
+	flex-direction: column-reverse;
+    align-items: center;
+}
+#regalo h2{
+	color:black;
+	font-family:'Quicksand', sans-serif; 
+	font-size: 1rem;
+	font-weight: bold;
+} 
+.closeContainer{
+	align-items: end;
+	border: 1px solid aqua;
+	border-radius: 22px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 300px;
+}
+#cerrarModal{
+	display: inline-block; 
+	 width: 25px;
+	height: 25px; 
+	background-color: #c44a4a;
+	 line-height: 25px; 
+	 border-radius: 10px;  
+}
+.modal-activar{
+visibility: visible;
+}
+
+  /* MEDIASQUERYS */
+  @media only screen and (max-width:1300px){
+	.tituloCal h2{
+		font-size: 1.5rem;
+	}
+	.textoCal p{
+		color: black;
+		font-size:1rem;
+	}
+  }
+
+  @media only screen and (max-width: 990px) {
+.cuerpo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#container{
+	width: 350px;
+}
+.tituloCal{
+	margin: 0%;
+}
+.tituloCal h2{
+	font-size: 1.2rem;	
+}
+.sobreCal{
+	display: flex;
+	align-items: center;
+}
+.textoCal p{
+	color: black;
+	font-size:1rem;
+	width: 100%;
+}
+
+}

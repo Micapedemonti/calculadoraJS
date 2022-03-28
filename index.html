@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+ <!-- BOOTSTRAP LINK -->
+ <!-- LINK ANIMATE -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+ <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+rel="stylesheet"
+/>
+
+ <link
+ href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css"
+ rel="stylesheet"
+/>
+  <title>Document</title>
+</head> 
+  <body>
+    <header>
+
+    </header>
+    <main>
+      <div class="cuerpo">
+        <div class="body-main">
+          <div class="sobreCal">
+          <div class="tituloCal">
+             <h2 class="ml6">
+      <span class="text-wrapper">
+        <span class="letters">CALCULADORA DE PROPINAS</span>
+      </span>
+  </div>
+  <div class="textoCal  animate_animated animate_backInLeft">
+    <p>Puede que a veces sacar un calculo mental puede ser complicado, pero con esta práctica calculadora de propinas,que ademas incluye un conversor de monedas. No se preocupe por equivocarse, ni pierda el tiempo haciendo las sumas,simplemente ingrese el monto total de su mesa, decida el porcentaje de propina que desea pagar según el nivel de servicio que recibió, elija en cuantas personas se divira el pago y use la calculadora para encontrar la propina total ademas del monto final de la factura.</p>
+  </div>
+    <div class="seccionRegalo">
+    <h1>Gracias por utilizar mi aplicacion, haz click para obtener un obsequio</h1>
+    <button id="obsequioBoton" >Quiero mi regalo</button>
+  </div>
+</div>
+
+        </div>
+      <div id ="container"class=" animate_animated animate_backInRight ">
+      <div class="coloCab"></div>
+        <div id ="calculator">
+        <form id="formulario">
+          <div class="control">
+      <p class="abono_total"> Abono total($) </p>
+       <input type="number"  value="0.00" id="total">
+       <p id="mensAbono">El monto ingresado no puede ser 0</p>
+  </div>
+   </div>
+      <div class="controlProp">
+        <p id="">Ingrese porcentaje de propina % </p>
+       <select id="propIng">
+        <option disabled selected value="0">Seleccionar propina</option>
+        <option value="15">15%-excelente</option>
+        <option value="10">10%-bueno</option>
+        <option value="2">2%-malo</option>
+      </select>
+    </div>
+      
+       <div class="cuerpobtn">
+         
+          <p class="numpers">En cuantas personas se dividira la propina?</p>
+          <div class="rango">
+          <p id="texto" class="val">
+           0
+          </p>
+       <input type="range"  min="1" max="15" value="0" autocomplete:="off" id="divProp">
+      </div>
+         <p>Elija moneda a pagar</p>
+         <div id="check">
+          <div id="USD">
+          <input type="radio" id="dolar"  name="moneda" value="HTML">
+         <label for="html">USD</label><br>
+        </div>
+        <div id="ARG">
+         <input type="radio" id="pesoArg"  name="moneda" value="CSS">
+          <label for="css">ARG</label><br>
+      </div>
+      <div class="mensajeDolar">
+        <p id="popup-mensaje">Valor dolar:106</p>
+       </div>
+    </div>
+       <button id="btn">CALCULAR</button>
+      </div>
+       <div class="facturaTotal">
+       <p>Propina por persona</p>
+       <input type="text" disabled id="prop_persona">
+       <p>Total por persona</p>
+       <input type="text" disabled  id="total_persona">
+       <input type="button" onclick="resetear()" id= "botton" value="RESETEAR">
+      </div>
+      </form>
+      </div>
+    </div>
+  </div>
+    </main>
+  <!-- FOOTER -->
+  <footer class="text-center text-white piePagina " style="background-color: #5ae7d1;">
+    <!-- Grid container -->
+    <div class="container pt-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <!-- Github -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      ©️ 2022 Copyright:
+      <a class="text-dark" >Micaela Pedemonti</a>
+    </div>
+    <!-- Copyright -->
+    <div id="pp" class="modal-container-regaloCliente">
+      <div class="closeContainer">
+      <button id="cerrarModal">X</button>
+      <div class="containerRegalo">
+      <div id="regalo"></div>
+    </div>
+    </div>
+  </div>
+  </footer>
+
+<!-- SCRITP TEXTO ANIMADO -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<!-- SCRIPT JS -->
+<script src="./js/scripts.js"></script>
+<!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"
+></script>
+<!-- sweetalert -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
