@@ -17,11 +17,7 @@ const resultado=document.getElementById("total_persona");
 const textoPer=document.getElementById("texto");
 const CalculadoraArray=[]
 const popup=document.querySelector("#popup-mensaje");
-const regaloCliente=document.getAnimations("regalo");
-const regalo=document.getElementById("regalo")
-const idPokemon= Math.floor(Math.random()*20);
-const cerrarModal=document.getElementById("cerrarModal");
-const pp=document.getElementById("pp");
+
 
 
 // CLASES
@@ -95,21 +91,6 @@ function arrayCalculadora(){
  localStorage.setItem("registroDePagos", JSON.stringify(CalculadoraArray) );
  
 }
-//INCORPORADO FETCH 
-function pokemon(){
-  fetch(` https://pokeapi.co/api/v2/pokemon/${idPokemon}`)
-  .then(response=> response.json())
-  .then((datos)=>{
-    regalo.innerHTML= `
-    <h2> nombre:${datos.name} </h2>
-    <img src=${datos.sprites.front_default} />`
-  })
-  }
-  function aparecePokemon (){
-    if (idPokemon>800) {
-      pokemon();
-    }
-    }
  // EVENTO PARA ACTIVAR MENSAJE MONTO 
  abonoTotal.addEventListener("input", function(){
   if (parseInt(abonoTotal.value )<10 ){
@@ -130,14 +111,6 @@ personas.oninput= ()=>{
   textoPer.innerHTML=personas.value
 }
 
-// EVENTOS PARA ACTIVAR POKEMON REGALO
-  botonRegalo.addEventListener("click",function(){
-    pp.classList.add("modal-activar")
-    pokemon();
-})
-  cerrarModal.addEventListener("click",function(){
-    pp.classList.remove("modal-activar")
-  })
  
 // EVENTOS DEL CLICK USD Y ARG
 
@@ -165,22 +138,3 @@ btn.addEventListener("click",function(resetear){
   resetear.preventDefault();
 
   })    
-
-// LIBRERIAS
-let textWrapper = document.querySelector('.ml6 .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml6 .letter',
-    translateY: ["1.1em", 0],
-    translateZ: 0,
-    duration: 750,
-    delay: (el, i) => 50 * i
-  }).add({
-    targets: '.ml6',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
